@@ -9,9 +9,9 @@ export class AppComponent implements OnInit {
   title = 'my-other-first-projetc-angular';
   
   ngOnInit(): void {
-    console.log('Please, wait for two second...');
+    console.log('Please, wait for one second...');
     setTimeout( () => {
       console.log('Go!!!');
-    }, 2000);
+    }, 1000);
   }
 }
