@@ -10,6 +10,12 @@ export class AppComponent implements OnInit, DoCheck, AfterContentInit, AfterCon
   
   public count: number = 1;
 
+  public keep: boolean = true;
+
+  public destroy(): void {
+    this.keep = false;
+  }
+  
   public addOne(): number {
     return this.count += 1;
   }
