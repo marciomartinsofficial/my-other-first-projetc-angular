@@ -14,7 +14,8 @@ export class TitleComponent implements OnInit, OnChanges, OnDestroy {
     console.log("Go OnDestroy");
   }
   ngOnChanges(changes: SimpleChanges): void {
-    alert('titleMsg was changed!');
+    //alert('titleMsg was changed!');
+    console.log("titleMsg was changed!");
   }
 
   ngOnInit(): void {}
