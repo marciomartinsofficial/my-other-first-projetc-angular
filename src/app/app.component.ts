@@ -8,11 +8,17 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 export class AppComponent implements OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
   title = 'my-other-first-projetc-angular';
   
+  public count: number = 1;
+
+  public addOne(): number {
+    return this.count += 1;
+  }
+
   ngOnInit(): void {
     console.log('Please, wait for one second...');
     setTimeout( () => {
       console.log('Go OnInit');
-    }, 1000);
+    }, 1000); 
   }
 
   ngDoCheck(): void {
