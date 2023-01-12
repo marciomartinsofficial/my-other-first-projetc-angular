@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class DataBindingInterpolationComponent {
 
+  public age: number = 35;
+
+  public incrementValue: number = 1;
+
+  public increment(): number {
+    return this.age + this.incrementValue;
+  }
 }
