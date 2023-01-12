@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class DataBindingPropertyBindingComponent {
 
+  public yes:boolean = true;
+  public no:boolean = false;
+
 }
