@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TitleComponent } from './title/title.component';
 import { DataBindingInterpolationComponent } from './data-binding-interpolation/data-binding-interpolation.component';
 import { DataBindingPropertyBindingComponent } from './data-binding-property-binding/data-binding-property-binding.component';
+import { DataBindingEventBindingComponent } from './data-binding-event-binding/data-binding-event-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitleComponent,
     DataBindingInterpolationComponent,
-    DataBindingPropertyBindingComponent
+    DataBindingPropertyBindingComponent,
+    DataBindingEventBindingComponent
   ],
   imports: [
     BrowserModule,
