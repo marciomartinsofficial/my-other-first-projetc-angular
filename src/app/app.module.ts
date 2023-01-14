@@ -7,6 +7,7 @@ import { TitleComponent } from './title/title.component';
 import { DataBindingInterpolationComponent } from './data-binding-interpolation/data-binding-interpolation.component';
 import { DataBindingPropertyBindingComponent } from './data-binding-property-binding/data-binding-property-binding.component';
 import { DataBindingEventBindingComponent } from './data-binding-event-binding/data-binding-event-binding.component';
+import { DataBuildingToWayBindingComponent } from './data-building-to-way-binding/data-building-to-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DataBindingEventBindingComponent } from './data-binding-event-binding/d
     TitleComponent,
     DataBindingInterpolationComponent,
     DataBindingPropertyBindingComponent,
-    DataBindingEventBindingComponent
+    DataBindingEventBindingComponent,
+    DataBuildingToWayBindingComponent
   ],
   imports: [
     BrowserModule,
