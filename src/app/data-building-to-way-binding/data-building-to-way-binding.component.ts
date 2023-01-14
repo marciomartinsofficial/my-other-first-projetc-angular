@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class DataBuildingToWayBindingComponent {
 
+  public nameToWayTest:string = "Write a name";
+
 }
