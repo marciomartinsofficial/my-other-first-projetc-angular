@@ -9,6 +9,7 @@ import { DataBindingPropertyBindingComponent } from './data-binding-property-bin
 import { DataBindingEventBindingComponent } from './data-binding-event-binding/data-binding-event-binding.component';
 import { DataBuildingToWayBindingComponent } from './data-building-to-way-binding/data-building-to-way-binding.component';
 import { FormsModule } from '@angular/forms';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     DataBindingInterpolationComponent,
     DataBindingPropertyBindingComponent,
     DataBindingEventBindingComponent,
-    DataBuildingToWayBindingComponent
+    DataBuildingToWayBindingComponent,
+    StructuralDirectivesComponent
   ],
   imports: [
     BrowserModule,
