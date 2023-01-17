@@ -1,2 +1,7 @@
 <h2>Structural Directives</h2>
 
+<p *ngIf="printP; else elseBlock">Print p</p>
+
+<ng-template #elseBlock>
+    <p>Don't print p</p>
+</ng-template>
