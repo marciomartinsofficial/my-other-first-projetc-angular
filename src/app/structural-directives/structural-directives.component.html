@@ -1,7 +1,16 @@
 <h2>Structural Directives</h2>
-
+<p>ngIf</p>
 <p *ngIf="printP; else elseBlock">Print p</p>
 
 <ng-template #elseBlock>
     <p>Don't print p</p>
 </ng-template>
+
+<br>
+<br>
+
+<p>ngFor</p>
+<ul>
+    <li *ngFor="let item of list; let i = index">[{{i}}] - {{item.name}} - {{item.age}} <button (click)="onClickRemove(i)">Remove</button></li>
+</ul>   
+<button (click)="onClickAdd()">Add</button>
