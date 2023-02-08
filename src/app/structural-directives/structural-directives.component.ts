@@ -15,6 +15,8 @@ export class StructuralDirectivesComponent implements OnInit {
   
   public printP:boolean = true;
 
+  public name:string = 'Luis';
+
   ngOnInit(): void {
     setInterval( () => {
       this.printP = !this.printP;

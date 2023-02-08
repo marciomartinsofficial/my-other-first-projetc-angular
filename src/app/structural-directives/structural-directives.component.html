@@ -14,3 +14,23 @@
     <li *ngFor="let item of list; let i = index">[{{i}}] - {{item.name}} - {{item.age}} <button (click)="onClickRemove(i)">Remove</button></li>
 </ul>   
 <button (click)="onClickAdd()">Add</button>
+
+<br>
+<br>
+
+<p>ngSwitch</p>
+<input type="text" [(ngModel)]="name">
+<div [ngSwitch]="name">
+    <p *ngSwitchCase="'Luis'">
+        Luís is my son.
+    </p>
+    <p *ngSwitchCase="'Angelo'">
+        Ângelo is my son too.
+    </p>
+    <p *ngSwitchCase="'Miriam'">
+        Miriam is my doughter.
+    </p>
+    <p *ngSwitchDefault>
+        I don't know this person.
+    </p>
+</div>
