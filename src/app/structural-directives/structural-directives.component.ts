@@ -17,10 +17,18 @@ export class StructuralDirectivesComponent implements OnInit {
 
   public name:string = 'Luis';
 
+  public ready:boolean = true;
+
   ngOnInit(): void {
     setInterval( () => {
       this.printP = !this.printP;
     }, 2000);
+
+    setInterval(
+      () => {
+        this.ready = !this.ready;
+      }, 2000
+    );
   }
 
   public onClickAdd(): void {
