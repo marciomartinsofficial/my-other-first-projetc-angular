@@ -19,6 +19,10 @@ export class StructuralDirectivesComponent implements OnInit {
 
   public ready:boolean = true;
 
+  public backgroundColor:string = 'yellow';
+
+  public heightPx:string = '20px';
+
   ngOnInit(): void {
     setInterval( () => {
       this.printP = !this.printP;
@@ -27,6 +31,18 @@ export class StructuralDirectivesComponent implements OnInit {
     setInterval(
       () => {
         this.ready = !this.ready;
+
+        if (this.backgroundColor == 'yellow') {
+          this.backgroundColor = 'blue';
+        } else {
+          this.backgroundColor = 'yellow';
+        }
+
+        if (this.heightPx == '20px') {
+          this.heightPx = '70px';
+        } else {
+          this.heightPx = '20px';
+        }
       }, 2000
     );
   }
